@@ -299,6 +299,13 @@ apiv2_pim_reporting_methods:
   defaults:
     _api: OrangeHRM\Pim\Api\ReportingMethodConfigurationAPI
 
+apiv2_pim_configure:
+  path: /api/v2/pim/configures
+  controller: OrangeHRM\Core\Controller\Rest\V2\GenericRestController::handle
+  methods: [ GET, POST, PUT ]
+  defaults:
+    _api: OrangeHRM\Pim\Api\ConfigAPI
+
 ##########################
 #        Files
 ##########################
@@ -404,4 +411,9 @@ save_reporting_method:
 edit_reporting_method:
   path: /pim/saveReportingMethod/{id}
   controller: OrangeHRM\Pim\Controller\SaveReportingMethodController::handle
+  methods: [ GET ]
+
+view_config:
+  path: /pim/configurePim
+  controller: OrangeHRM\Pim\Controller\ConfigController::handle
   methods: [ GET ]
