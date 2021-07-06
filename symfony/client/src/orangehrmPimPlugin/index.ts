@@ -32,6 +32,7 @@ import SaveTerminationReason from './pages/terminationReason/SaveTerminationReas
 import ReportingMethod from './pages/reportingMethod/ReportingMethod.vue';
 import EditReportingMethod from './pages/reportingMethod/EditReportingMethod.vue';
 import SaveReportingMethod from './pages/reportingMethod/SaveReportingMethod.vue';
+import OptionalField from './pages/optionalField/OptionalField.vue';
 
 export default {
   'employee-save': SaveEmployee,
@@ -50,4 +51,5 @@ export default {
   'reporting-method-list': ReportingMethod,
   'reporting-method-edit': EditReportingMethod,
   'reporting-method-save': SaveReportingMethod,
+  'config-list': OptionalField,
 };
