@@ -299,7 +299,7 @@ apiv2_pim_reporting_methods:
   defaults:
     _api: OrangeHRM\Pim\Api\ReportingMethodConfigurationAPI
 
-apiv2_pim_configure:
+apiv2_pim_optional_fields:
   path: /api/v2/pim/configures
   controller: OrangeHRM\Core\Controller\Rest\V2\GenericRestController::handle
   methods: [ GET, PUT ]
@@ -415,7 +415,7 @@ edit_reporting_method:
   controller: OrangeHRM\Pim\Controller\SaveReportingMethodController::handle
   methods: [ GET ]
 
-view_config:
+view_optional_fields:
   path: /pim/configurePim
-  controller: OrangeHRM\Pim\Controller\ConfigController::handle
+  controller: OrangeHRM\Pim\Controller\OptionalFieldController::handle
   methods: [ GET ]
